@@ -1,0 +1,50 @@
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title About us 
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include ../includes/page-style.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include ../includes/pagef-nav.pug
+     // Nav Bar
+     include ../includes/page-nav.pug
+     .headr-name
+      .why-ncc
+       h1(style="color:#737272;font-weight:bold;width:100%") Newcastle Commitments
+      .container
+       .row
+        .col-12
+          .img
+           img.mb-5(src="../img/oursec/11.png", alt="" ,style="width: 100%")
+        .paraghrapha
+         h4  Showing Our Commitment to Achieving the Highest Academic Standards:
+         p Newcastle College constantly strives to build partnerships and membership with the world’s leading institutions to ensure that our standards remain unsurpassed in the industry. We are associated with renowned organizations such as The Council for Adult and Experiential Learning (CAEL). Our memberships with CAEL demonstrate our commitment to the never ending process of providing quality education globally.
+         h4  About The Council for Adult and Experiential Learning(CAEL):
+         p The Council for Adult and Experiential Learning (CAEL) links learning and work. CAEL is a nonprofit that works at all levels within the higher education, public, and private sectors to make it easier for people to get the education and training they need. The Council for Adult and Experiential Learning (CAEL) works towards facilitating individuals in getting the education and training they need to excel professionally. They do this by finding practical ways to link people’s education to their jobs or future careers. They also support ways to link learning from people’s work and life experiences to their educational goals-so they earn their degrees and credentials faster.
+ 
+        
+        h2(style="color:#737272;font-weight:bold;width:100%") LEAVE A COMMENT
+        span You must be 
+        a(href="login.html") &nbsp;&nbsp; logged in &nbsp;&nbsp;
+        span to post a comment.
+    
+     .footer
+      .container
+       .row
+        include ../includes/pages-footer.pug
+
+     // Java Script Files
+     include ../includes/page-js.pug
+     // End JS Files
+     
+     
+      

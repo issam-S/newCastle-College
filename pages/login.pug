@@ -1,0 +1,58 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include ../includes/page-style.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include ../includes/pagef-nav.pug
+     // Nav Bar
+     include ../includes/page-nav.pug
+     .headr-name
+      .why-ncc
+       h1 LOG IN
+      .container
+       .row
+        .col-4
+         // Default form login
+         form
+          p.h4.mb-4 Sign in
+          // Email
+          input#defaultLoginFormEmail.form-control.mb-4(type='email', placeholder='E-mail')
+          // Password
+          input#defaultLoginFormPassword.form-control.mb-4(type='password', placeholder='Password')
+          .d-flex.justify-content-around
+          div
+          // Remember me
+          .custom-control.custom-checkbox
+              input#defaultLoginFormRemember.custom-control-input(type='checkbox')
+              label.custom-control-label(for='defaultLoginFormRemember') Remember me
+          div
+          // Forgot password
+          a(href='') Forgot password?
+          // Sign in button
+          button.btn.btn-info.btn-block.my-4(type='submit') log in
+          
+          // Social login
+         
+          // Default form login
+     .footer
+      .container
+       .row
+        include ../includes/pages-footer.pug
+
+     // Java Script Files
+     include ../includes/page-js.pug
+     // End JS Files
+     
+     

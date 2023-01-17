@@ -1,0 +1,30 @@
+
+// Navbar
+nav.navbar.navbar-expand-lg.navbar-dark.main-nav
+  .container
+    // Navbar brand
+    img(src="img/Logo/logo.png", alt="alt")
+    // Collapse button
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#basicExampleNav', aria-controls='basicExampleNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    // Collapsible content
+    .col-md-2.col-xs-12
+    #basicExampleNav.collapse.navbar-collapse
+      // Links
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='index.html')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='why-ncc.html') why ncc?
+        li.nav-item
+          a.nav-link(href='about.html') about us
+        li.nav-item
+          a.nav-link(href='studyatncc.html') study at ncc
+        li.nav-item
+          a.nav-link(href='studentlogin.html') student login
+        
+      // Links
+    // Collapsible content
+// /.Navbar

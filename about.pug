@@ -1,0 +1,73 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include includes/styles.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include includes/f-nav.pug
+     // Nav Bar
+     include includes/main-nav.pug
+     .headr-name(style="margin:0")
+      .why-ncc
+       h1(style="margin-bottom:0") About Us
+     section.timeline-go(style="margin:0")
+      .timeline
+       .container.left
+        .content
+         a(href="")
+          h3 Newcastle College is Founded
+         p
+          img(src="img/timeline/1.jpg", alt="alt")
+         p Newcastle College is an accredited British College providing superb modern Careers Training to tens of thousands of people worldwide. NCC Members study through NCCs popular and professional training methods, or can study where available with the support of NCC appointed local organisations offering campus or tutorial assistance. For 25 years NCC has been a world leader in professional.
+       .container.right
+        .content
+         a(href="") 
+          h3 College Graduation 
+         p
+          img(src="img/timeline/2.jpg", alt="alt")
+         | "Graduation is a time of completion, of finishing, of an ending, however, it is also a time of celebration of achievement and a beginning for the new graduate."       
+       .container.left
+        .content
+         a(href="") 
+          h3 Career Center Opens
+         p
+          img(src="img/timeline/3.jpg", alt="alt")
+         p Newcastle College offers a wide range of career services to ensure student success throughout their careers. The university works in collaboration with career specialists and faculty advisors to create incomparable professionals – those who can really make a difference.
+       .container.right
+        .content
+         a(href="") 
+          h3 Presidential Scholarship
+         p
+          img(src="img/timeline/4.jpg", alt="alt")
+         p  Newcastle College offers Presidential Scholarship We do everything to help you earn your degree without any hassles. Given the spiking tuition and other educational costs that keep students from pursuing their academic goals, Newcastle offers its financial aid through “Presidential Scholarship.You can save up to 90% of your tuition fee.
+       .container.left
+        .content
+         a(href="") 
+          h3 2000th Graduate from Newcastle
+         p
+          img(src="img/timeline/3.jpg", alt="alt")
+         p Graduation day every year in all over the world .
+
+     hr
+
+     .footer
+      .container
+       .row
+        include includes/footer.pug
+
+     // Java Script Files
+     include includes/js.pug
+     // End JS Files
+     
+     

@@ -1,0 +1,76 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include includes/styles.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include includes/f-nav.pug
+     // Nav Bar
+     include includes/main-nav.pug
+     .headr-name
+      .why-ncc
+       h1 Study At NCC
+      .container
+       .row
+        .col-md-3.col-xs-12
+         .studyatncc
+          .images
+           img(src="img/navpage/s1.jpg", alt="")
+           span Bachelor
+           button.btn.btn-outline-dark(type='submit') VIEW DETAILS
+          h3 
+           a(href="#") Bachelor
+          hr
+          p Newcastle College professional, flexible two-year Bachelor Programmes provides Study & Training to develop high level skills, knowledge...
+        .col-md-3.col-xs-12
+         .studyatncc
+          .images
+           img(src="img/navpage/s2.jpg", alt="")
+           span E-Learning Training & Attended courses
+           button.btn.btn-outline-dark(type='submit') VIEW DETAILS
+          h3 
+           a(href="#") E-Learning Training & Attended courses
+          hr
+          p    Training coursesManagerial Training Programmes:Organizational Ethics...
+        .col-md-3.col-xs-12
+         .studyatncc
+          .images
+           img(src="img/navpage/s3.jpg", alt="")
+           span DBA
+           button.btn.btn-outline-dark(type='submit') VIEW DETAILS
+          h3 
+           a(href="#") DBA
+          hr
+          p   Doctorate  program at Newcastle College with mix of advanced coursework and research would enable you to get hands on experience...
+        .col-md-3.col-xs-12
+         .studyatncc
+          .images
+           img(src="img/navpage/s4.jpg", alt="")
+           span Master of Business Administration MBA
+           button.btn.btn-outline-dark(type='submit') VIEW DETAILS
+          h3 
+           a(href="#") Master of Business Administration MBA
+          hr
+          p Newcastle College offers ambitious men and women a flexible three year of Master of Business Administration Programme with a range of specialisations....
+
+     .footer
+      .container
+       .row
+        include includes/footer.pug
+
+     // Java Script Files
+     include includes/js.pug
+     // End JS Files
+     
+     

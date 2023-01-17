@@ -1,0 +1,40 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include includes/styles.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include includes/f-nav.pug
+     // Nav Bar
+     include includes/main-nav.pug
+     .headr-name
+      .why-ncc
+       h1 Alumni Login
+      .container
+       .row(style="margin-bottom: 103px;")
+        h3 Online System
+        .md-form(style="width: 50%;margin-top: 57px;")
+         input#form1.form-control(type='text')
+         label(for='form1') ENTER REGISTRATION ID
+         button.btn.btn-dark(type='submit') Submit
+     .footer
+      .container
+       .row
+        include includes/footer.pug
+
+     // Java Script Files
+     include includes/js.pug
+     // End JS Files
+     
+     

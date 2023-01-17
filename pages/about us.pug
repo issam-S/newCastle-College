@@ -1,0 +1,43 @@
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title About us 
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include ../includes/page-style.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include ../includes/pagef-nav.pug
+     // Nav Bar
+     include ../includes/page-nav.pug
+     .headr-name
+      .why-ncc
+       h1 About us 
+      .container
+       .row
+        .col-12
+        .paraghrapha
+        
+        h2(style="color:#737272;font-weight:bold;width:100%") LEAVE A COMMENT
+        span You must be 
+        a(href="login.html") &nbsp;&nbsp; logged in &nbsp;&nbsp;
+        span to post a comment.
+    
+     .footer(style="position: absolute;")
+      .container
+       .row
+        include ../includes/pages-footer.pug
+
+     // Java Script Files
+     include ../includes/page-js.pug
+     // End JS Files
+     
+     
+      

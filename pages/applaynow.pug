@@ -1,0 +1,95 @@
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Personal Education Plan
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include ../includes/page-style.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include ../includes/pagef-nav.pug
+     // Nav Bar
+     include ../includes/page-nav.pug
+     .headr-name
+      .why-ncc
+       h1 Applay Now
+      .container
+       .row
+        section.get-in
+      .container
+       .row
+        // Grid column
+        .col-md-9.mb-md-0.mb-5
+            form#contact-form(name='contact-form', action='mail.php', method='POST')
+            // Grid row
+            .row(style="width: 100%;margin:0;padding:0")
+                // Grid column
+                .col-md-6(style="width: 100%;margin:0;padding:0")
+                 .md-form.mb-0
+                    input#name.form-control(name='name', type='text')
+                    label(for='name') Your name
+                // Grid column
+                // Grid column
+                .col-md-6
+                 .md-form.mb-0
+                    input#email.form-control(name='email', type='text')
+                    label(for='email') Your email
+                // Grid column
+                .col-md-6(style="width: 100%;margin:0;padding:0")
+                 .md-form.mb-0
+                    input#phone.form-control(name='phone', type='number')
+                    label(for='phone') phone
+                // Grid column
+                // Grid column
+                .col-md-6
+                 .md-form.mb-0
+                    input#url.form-control(name='url', type='text')
+                    label(for='url') Your url
+                // Grid column
+                // Grid row
+                // Grid row
+                .row(style="width: 100%;")
+                 .col-md-12
+                  .md-form.mb-0
+                    input#subject.form-control(name='subject', type='text')
+                    label(for='subject') Subject
+                // Grid row
+                // Grid row
+                .row(style="width: 100%;")
+                 // Grid column
+                 .col-md-12
+                  .md-form
+                    textarea#message.form-control.md-textarea(name='message', rows='2', type='text')
+                    label(for='message') Your message
+                 // Grid row
+                 .col-md-6
+                  .md-form.mb-0
+                    input#email.form-control(name='leave', type='text')
+                    label(for='leave') Leave Blank:
+            .text-center.text-md-left
+             a.btn.btn-primary(onclick="validateForm()") Send
+            .status
+
+        h2(style="color:#737272;font-weight:bold;width:100%") LEAVE A COMMENT
+        span You must be 
+        a(href="login.html") &nbsp;&nbsp; logged in &nbsp;&nbsp;
+        span to post a comment.
+
+     .footer
+      .container
+       .row
+        include ../includes/pages-footer.pug
+
+     // Java Script Files
+     include ../includes/page-js.pug
+     // End JS Files
+     
+     
+      

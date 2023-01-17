@@ -1,0 +1,45 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include includes/styles.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include includes/f-nav.pug
+     // Nav Bar
+     include includes/main-nav.pug
+     .headr-name
+      .why-ncc
+       h1 Why NCC ?
+      .container
+       .row
+        .img.col-md-10.col-xs-12
+         img(src="img/navpage/why-ncc.jpg", alt="", style="width:100%" )
+         p.ntth “The best way to predict the future is to create it ”
+        p Are you ready to create a new future and become more attractive candidate for a management level career?
+         | With an enduring dedication to the pursuit of excellence, our teaching and learning methodologies are highly interdisciplinary to the  full spectrum of the current global challenges.
+         | The study environment is highly collaborative, friendly and distinctive. Our diverse student population depicts the fact that we are dedicated to making top accessible to all.
+         | We perform well in a variety of student surveys, where satisfaction levels and overall experience are consistently checked. We give high priority to caring and supporting students, from the initial stage  until the final award, and even after graduation. Our students are active around and beyond the campus. In addition to the classroom experience, study tours and other extracurricular activities become an integral part of student life at Newcastle college..
+
+
+
+     .footer
+      .container
+       .row
+        include includes/footer.pug
+
+     // Java Script Files
+     include includes/js.pug
+     // End JS Files
+     
+     

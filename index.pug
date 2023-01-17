@@ -1,0 +1,398 @@
+doctype
+html(lang="en" dir="ltr")
+    head
+     //-  meta
+     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+     meta(name="description", content='NC COLLEGE')
+     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+     //-  end meta
+     //- start title
+     title Nc College
+     //- end title
+     //  Cascading Style Sheet  Files  
+     include includes/styles.pug
+     // End Css Files
+    body
+     // Contact Nav Bar
+     include includes/f-nav.pug
+     // Nav Bar
+     include includes/main-nav.pug
+     // Start Carosul
+     include includes/carsoul.pug
+     |
+     // Start our section
+     section.our
+      h1 EXPLORE OUR COLLEGE
+       hr
+      p.thebestway The Best Way To Predict The Future Is To Create It
+       .container
+        .row
+         .swiper-container
+          .swiper-wrapper
+           .swiper-slide.col-md-4.col-xs-12
+            .side
+             figure.imghvr-zoom-out-left
+              img(src="img/oursec/1.jpg", alt="alt" )
+              figcaption
+               p Business Improvement
+               button.btn.boton.waves-effect(type='button') DETAILS
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/1.jpg', data-lightbox='image-1', data-title='Business Improvement') 
+             .content-our
+              a(href="#") Business Improvement
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p  Business improvement Skills to help start, build and grow your business Collaborate ...
+              div.date
+               a Oct 04,2014
+               i.far.fa-calendar-alt
+             
+            
+           .swiper-slide.col-md-4.col-xs-12 
+            .side
+             figure.imghvr-blur
+              img(src="img/oursec/2.jpg", alt="alt" )
+              figcaption
+               p Schools And Colleges Outreach
+               button.btn.boton.waves-effect(type='button') DETAILS
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/2.jpg', data-lightbox='image-1', data-title='Schools And Colleges Outreach') 
+             .content-our
+              a(href="#") Schools And Colleges Outreach
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p  If you are supporting students considering higher education or who are interested in studying at the  ...
+              div.date
+               a jun 17,2014
+               i.far.fa-calendar-alt
+           .swiper-slide.col-md-4.col-xs-12 
+            .side
+             figure.imghvr-fold-left
+              img(src="img/oursec/3.jpg", alt="alt" )
+              figcaption
+               p Undergraduate Open Days
+               button.btn.boton.waves-effect(type='button') DETAILS
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/3.jpg', data-lightbox='image-1', data-title='Business Improvement') 
+             .content-our
+              a(href="#") Undergraduate Open Days
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p  Visiting the college you are thinking of applying to is very important. Coming to one of our open days is a  ...
+              div.date
+               a jun 02,2014
+               i.far.fa-calendar-alt
+           .swiper-slide.col-md-4.col-xs-12 
+            .side
+             figure.imghvr-shutter-in-out-diag-2
+              img(src="img/oursec/4.jpg", alt="alt" )
+              figcaption
+               p Teaching and learning excellence
+
+               button.btn.boton.waves-effect(type='button') DETAILS
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/4.jpg', data-lightbox='image-1', data-title='Business Improvement') 
+             .content-our
+              a(href="#") Teaching and learning 
+
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p We've received the highest possible rating for the quality of our education from the independent Quality  ...
+              div.date
+               a may 31,2014
+               i.far.fa-calendar-alt
+           .swiper-slide.col-md-4.col-xs-12 
+            .side
+             figure.imghvr-flip-diag-2
+              img(src="img/oursec/5.png", alt="alt" )
+              figcaption
+               p General Admissions
+               button.btn.boton.waves-effect(type='button') DETAILS
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/5.png', data-lightbox='image-1', data-title='Business Improvement') 
+             .content-our
+              a(href="#") General Admissions
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p  Enroll at Newcastle College in four easy steps. Choose a plan that best fits your financial and academic  ...
+              div.date
+               a may 31,2014
+               i.far.fa-calendar-alt
+           .swiper-slide.col-md-4.col-xs-12
+            .side
+             figure.imghvr-hinge-down
+              img(src="img/oursec/6.jpg", alt="alt" )
+              figcaption
+               p International Student
+               button.btn.boton.waves-effect(type='button') DETAILS
+                a(href="pages/International Student.html")  
+               button.btn.boton.waves-effect(type='button') EXPAND
+                a(href='img/oursec/6.jpg', data-lightbox='image-1', data-title='Business Improvement') 
+             .content-our
+              a(href="pages/International Student.html") International Student
+               hr(style="width:80%;border-top: 3px solid rgba(0,0,0,.1);")
+              p  The Newcastle College Training Team have a regular schedule of standard courses, a detailed list of ...
+              div.date
+               a may 31,2014
+               i.far.fa-calendar-alt
+           // Add Pagination
+         .swiper-pagination2
+         .swiper-button-next
+         .swiper-button-prev
+          // ./End section
+     // Section welcom to
+     section.welcom-to
+      .container
+       h1 WELCOME TO NEWCASTLE COLLEGE
+       .head-name
+        ul.smooth-scroll
+         li
+          a.active(href="#services1" onclick="services1()") 01 About Newcastle
+         li 
+          a(href="#services2" onclick="services2()") 02 Ncc Differance
+         li 
+          a(href="#services3" onclick="services3()") 03 Academic collaborations
+         li 
+          a(href="#services4" onclick="services4()") 04 After Newcastle
+       .li-content
+        .row
+         #services1.col-md-6.col-xs-12
+          img(src="img/service/01.jpg", alt="alt")
+         #services1-content.col-md-6.col-xs-12
+          h1 Our Mission and Philosophy
+          p Newcastle College is one of the largest education, training and employability organizations in the UK. NCC’s mission is to develop people through learning and achievement, for the benefit of themselves, society and the economy. The focus is on meeting national and regional education, skills and employment goals for individuals and employers in line with government priorities.Our Strategic Plan sets the direction of travel for Newcastle college . It is a statement of our priorities.
+          button.btn.blue-gradient.btn-rounded VISIT OUR COLLEGE
+         #services2.col-md-6.col-xs-12
+          img(src="img/service/02.jpg", alt="alt")
+         #services2-content.col-md-6.col-xs-12
+          h1 The Right Choice for Achieving Your Goals
+          p Newcastle College offers the quality, convenience, and accessibility you need to make your dreams a reality. We’re a small school with a large reach and big impact. Our experienced faculty will guide and inspire you to gain essential skills and knowledge through our rigorous curricula and supportive, interactive classes.The more you learn about Newcastle College, the more you’ll understand what makes us different, and how we can make a difference in your life and your career.
+          button.btn.blue-gradient.btn-rounded APPLY TO NEWCASTLE
+         #services3.col-md-6.col-xs-12
+          img(src="img/service/03.jpg", alt="alt")
+         #services3-content.col-md-6.col-xs-12
+          h1 Franchaise System
+          p Through our academic partnerships in the UK and overseas we offer a diverse range of courses in some inspiring locations.These important partnerships build on the existing expertise found at Newcastle college and give our students an extra enriching dimension to their studies.Setting up a collaboration For specific enquiries on setting up academic collaborative partnerships with Newcastle college contact our Regional Manager If you are a member of NCC staff you can find ample information about setting up a collaboration in the Academic Content section of the Staff Gateway. Information and regulations for students at partner colleges studying away from NCC at a partner college we want students to feel they are still part of this institution. Our Academic Regulations for Taught Programmes, supplied on our student portal, MyNCC, are a helpful resource. For any partner college enquiries contact: Email: Franchaise@nccollege.uk
+          button.btn.blue-gradient.btn-rounded CONTACT ADMISSIONS
+         #services4.col-md-6.col-xs-12
+          img(src="img/service/04.jpg", alt="alt")
+         #services4-content.col-md-6.col-xs-12
+          h1 Career Center
+          p Newcastle College offers a wide range of career services to ensure student success throughout their careers. The College works in collaboration with career specialists and faculty advisors to create incomparable professionals those who can really make a difference. Newcastle College specifically caters to working adults who wish to study without compromising on their current jobs. Considering that students at Newcastle College are individuals who seek better employment opportunities, NCC offers them the opportunity to work or intern at reputable organizations. Newcastle College offers focused services to the working professionals who want to pursue higher education. With rich professional experience portfolio and quality education, This is not only a professional’s desire but Newcastle College also sees it as its purpose to get the students prepared for the best so that they won’t have to compromise anymore. There are two types of placements offered by Newcastle College
+          button.btn.blue-gradient.btn-rounded CONTACT ADMISSIONS
+     // New Section
+     section.timeline-go
+      .timeline
+       h5.history HISTORY OF NEWCASTLE COLLEGE
+
+       .container.left
+        .content
+         h3 Newcastle College is Founded
+         img(src="img/timeline/1.jpg", alt="alt")
+         p Newcastle College is an accredited British College providing superb modern Careers Training to tens of thousands of people worldwide. NCC Members study through NCCs popular and professional training methods, or can study where available with the support of NCC appointed local organisations offering campus or tutorial assistance. For 25 years NCC has been a world leader in professional.
+       .container.right
+        .content
+         h3 College Graduation 
+         p
+          img(src="img/timeline/2.jpg", alt="alt")
+         | "Graduation is a time of completion, of finishing, of an ending, however, it is also a time of celebration of achievement and a beginning for the new graduate."       
+       .container.left
+        .content
+         h3 Career Center Opens
+         p
+          img(src="img/timeline/3.jpg", alt="alt")
+         p Newcastle College offers a wide range of career services to ensure student success throughout their careers. The university works in collaboration with career specialists and faculty advisors to create incomparable professionals – those who can really make a difference.
+       .container.right
+        .content
+         h3 Presidential Scholarship
+         p
+          img(src="img/timeline/4.jpg", alt="alt")
+         p  Newcastle College offers Presidential Scholarship We do everything to help you earn your degree without any hassles. Given the spiking tuition and other educational costs that keep students from pursuing their academic goals, Newcastle offers its financial aid through “Presidential Scholarship.You can save up to 90% of your tuition fee.
+       .container.left
+        .content(style="height: 200px;")
+         h3 2000th Graduate from Newcastle
+         p
+          img(src="img/timeline/3.jpg", alt="alt")
+         p Graduation day every year in all over the world .
+
+      
+     section.markting.mt-5
+       .row
+         .swiper-container2
+          .swiper-wrapper
+           .swiper.side
+             figure.img-scale
+              img(src="img/markting/1.jpg", alt="alt" )
+             .content-our
+              a(href="#") Why Newcastle College
+                hr(style="width:100%;border-top: 3px solid rgba(0,0,0,.1);")
+              p Are you ready to create a new future and become more attractive candidate for a management level career?    
+              a(href="" , style="font-size:14px") learn more >>
+        
+           .swiper.side
+             .img-scale
+              img(src="img/markting/2.jpg", alt="alt" )
+             .content-our
+              a(href="#",style="padding: 16px 0;display: block;") Newcastle Commitments
+                hr(style="width:100%;border-top: 3px solid rgba(0,0,0,.1);")
+              p 	Showing Our Commitment to Achieving the Highest Academic Standards.
+              a(href="" , style="font-size:14px") learn more >>
+
+           .swiper.side
+             figure.img-scale
+              img(src="img/markting/3.png", alt="alt" )
+             .content-our
+              a(href="#") Presidential Scholarship
+                hr(style="width:100%;border-top: 3px solid rgba(0,0,0,.1);")
+              p We do everything to help you earn your degree without any hassles. Given the spiking tuition and other educational costs that keep students from pursuing their academic goals, 
+              a(href="" , style="font-size:14px") learn more >>
+
+           .swiper.side
+             figure.img-scale
+              img(src="img/markting/4.png", alt="alt" )
+             .content-our
+              a(href="#") Request Info
+                hr(style="width:100%;border-top: 3px solid rgba(0,0,0,.1);")
+              p Are you ready to create a new future and become more attractive candidate for a management level career?. 
+              a(href="" , style="font-size:14px") learn more >>
+        
+          .swiper-pagination2
+          .swiper-button-next2
+          .swiper-button-prev2
+     // Contact us
+     section.contact-us
+      h1(align="center" style="font-weight: bold;") GET IN TOUCH WITH US
+      hr(style="width:20%;border-top: 4px dashed rgba(55, 77, 158, 0.6);")
+      p If you have any questions regarding programs, facilities or have requests or suggestions to make, feel free to give us a call or fill out the form below.
+      .back-fix
+       .container
+        .row
+         .left
+          ul
+           li
+            p Contact Us
+           li
+            i.fas.fa-phone-volume.fa-2x.mb-4
+            p +44 28 4378 0051
+           li
+            i.fas.fa-envelope-open-text.fa-2x.mb-4
+            p  info@nccollege.uk
+         .right
+          ul
+           li
+            i.fas.fa-map-marked-alt.fa-2x.mb-4
+            p Staffed Hours
+            p Monday to Friday 9-00am to 6-30pm Saturday 9-00am to 2-00pm
+     // section get in touch
+     section.get-in
+      .container
+       .row
+        // Grid column
+        .col-md-9.mb-md-0.mb-5
+            form#contact-form(name='contact-form', action='mail.php', method='POST')
+            // Grid row
+            .row(style="width: 100%;margin:0;padding:0")
+                // Grid column
+                .col-md-6(style="width: 100%;margin:0;padding:0")
+                 .md-form.mb-0
+                    input#name.form-control(name='name', type='text')
+                    label(for='name') Your name
+                // Grid column
+                // Grid column
+                .col-md-6
+                 .md-form.mb-0
+                    input#email.form-control(name='email', type='text')
+                    label(for='email') Your email
+                // Grid column
+                .col-md-6(style="width: 100%;margin:0;padding:0")
+                 .md-form.mb-0
+                    input#phone.form-control(name='phone', type='number')
+                    label(for='phone') phone
+                // Grid column
+                // Grid column
+                .col-md-6
+                 .md-form.mb-0
+                    input#url.form-control(name='url', type='text')
+                    label(for='url') Your url
+                // Grid column
+                // Grid row
+                // Grid row
+                .row(style="width: 100%;")
+                 .col-md-12
+                  .md-form.mb-0
+                    input#subject.form-control(name='subject', type='text')
+                    label(for='subject') Subject
+                // Grid row
+                // Grid row
+                .row(style="width: 100%;")
+                 // Grid column
+                 .col-md-12
+                  .md-form
+                    textarea#message.form-control.md-textarea(name='message', rows='2', type='text')
+                    label(for='message') Your message
+                // Grid row
+            .text-center.text-md-left
+             a.btn.btn-primary(onclick="validateForm()") Send
+            .status
+        // Grid column
+     // our vision
+     section.ourvision
+      h1(align="center") OUR VISION
+      .container
+       .row
+        p Our current strategy is available on this webpage. It describes a period of exciting change covering the five years up to 2015, and a continuing commitment to providing education and opportunities to a wide range of students.The values, principles and priorities of the College reflect a process of consultation with all staff and students.The purpose of Newcastle college, as articulated by our students, is to provide the skills and knowledge to help access careers and improve life chances.
+     // start stacites section
+     section.state
+      .container
+       .row
+        .col-md-6.col-xs-12
+         span 94% NCAA Academic Success Rate
+         .progress.md-progress.mb-4
+          .progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 94%;')
+         span 68% Students Had Jobs at Graduation
+         .progress.md-progress.mb-4
+          .progress-bar(role='progressbar', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100', style='width: 68%')
+         span 75% Students Graduate in 4 years
+         .progress.md-progress.mb-4
+          .progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width: 75%')
+         span 60% Major in Science or Engineering
+         .progress.md-progress.mb-4
+          .progress-bar(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+         span 90% Participate in Internships, Research or Fieldwork
+         .progress.md-progress.mb-4
+          .progress-bar(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100', style='width: 90%')
+
+        .col-md-3.col-xs-12
+         .box
+          h1 90%
+          p Receive Financial Aid
+         
+        .col-md-3.col-xs-12
+         .box
+          h1 82%
+          p Job Placement
+         
+     
+        
+     // Footer
+     div.footer-copy
+      .footer
+       .container
+        .row
+         include includes/footer.pug
+       
+
+     
+div.swapping-squares-spinner(style="spinnerStyle")
+ div.square
+ div.square
+ div.square
+ div.square      
+        
+     
+
+
+
+
+
+     // Java Script Files
+     include includes/js.pug
+     // End JS Files
+     
+     
